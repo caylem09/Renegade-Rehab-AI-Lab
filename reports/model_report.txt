@@ -1,0 +1,23 @@
+AthleteIQ Model Report
+======================
+
+Accuracy: 93.53%
+
+                   precision    recall  f1-score   support
+
+ ascending_stairs       0.89      0.90      0.89       146
+          cycling       0.99      0.97      0.98       205
+descending_stairs       0.83      0.88      0.85       132
+          ironing       0.90      0.94      0.92       299
+            lying       1.00      0.94      0.97       241
+   nordic_walking       1.00      0.96      0.98       236
+     rope_jumping       0.98      0.93      0.96        61
+          running       0.99      0.93      0.96       122
+          sitting       0.93      0.91      0.92       231
+         standing       0.85      0.93      0.89       238
+  vacuum_cleaning       0.91      0.90      0.91       219
+          walking       0.99      0.97      0.98       298
+
+         accuracy                           0.94      2428
+        macro avg       0.94      0.93      0.93      2428
+     weighted avg       0.94      0.94      0.94      2428
