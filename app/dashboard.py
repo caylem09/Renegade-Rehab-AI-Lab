@@ -1,8 +1,14 @@
 from pathlib import Path
+import sys
 import pandas as pd
 import streamlit as st
 import joblib
 import matplotlib.pyplot as plt
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT))
+
+from src.ai_summary import generate_ai_summary
 
 DATA_FILE = Path("data/processed/pamap2_features.csv")
 MODEL_FILE = Path("models/activity_model.joblib")
@@ -99,8 +105,30 @@ st.dataframe(
             "correct",
         ]
     ],
-    use_container_width=True
+    width="stretch"
 )
+
+st.header("Local AI Sport Science Summary")
+
+summary_data = f"""
+Subject: {selected_subject}
+Activity windows analyzed: {len(subject_df)}
+Activities detected: {', '.join(activity_counts.index.tolist())}
+Most common activity: {activity_counts.index[0]}
+Average heart rate: {subject_df['heart_rate_mean'].mean():.1f} bpm
+Maximum heart rate: {subject_df['heart_rate_max'].max():.1f} bpm
+Sample model prediction accuracy: {sample_accuracy:.1%}
+"""
+
+st.write("The dashboard sends this structured summary to your local Ollama model:")
+
+st.code(summary_data)
+
+if st.button("Generate Local AI Sport Science Summary"):
+    with st.spinner("Asking your local AI model..."):
+        ai_summary = generate_ai_summary(summary_data)
+        st.success("Local AI summary generated.")
+        st.write(ai_summary)
 
 st.header("Model Report")
 
@@ -117,8 +145,8 @@ st.write(
     """
     This proof of concept shows how wearable sensor data can be turned into useful
     sport science information. The system cleans raw data, creates features,
-    trains a machine-learning model, evaluates predictions, and presents the
-    results in a coach-friendly dashboard.
+    trains a machine-learning model, evaluates predictions, presents results in
+    a dashboard, and uses a local AI model to generate a plain-English summary.
 
     This is not a medical tool and does not diagnose injury or prescribe training.
     It is a demonstration of applied AI for sport and movement science.
