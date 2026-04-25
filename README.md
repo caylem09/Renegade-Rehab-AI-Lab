@@ -87,3 +87,8 @@ Possible next steps include:
 - Add wellness or recovery inputs
 - Build a cleaner admissions demo version
 
+
+## Screenshot
+
+![AthleteIQ Dashboard](screenshots/dashboard_overview.png)
+
