@@ -23,20 +23,9 @@ AthleteIQ:
 
 This project uses the PAMAP2 Physical Activity Monitoring dataset.
 
-The dataset includes movement sensor and heart-rate data from subjects performing multiple physical activities such as walking, running, cycling, sitting, standing, and stair climbing.
+The project expects files like:
 
-## Machine Learning Workflow
-
-The workflow includes:
-
-1. Data loading
-2. Data cleaning
-3. Missing value handling
-4. Feature engineering
-5. Activity classification
-6. Model evaluation
-7. Dashboard visualization
-8. Local AI-generated interpretation
+data/raw/PAMAP2_Dataset/Protocol/subject101.dat
 
 ## Technologies Used
 
@@ -48,6 +37,48 @@ The workflow includes:
 - Ollama
 - qwen3:4b local language model
 - Git
+
+## Screenshot
+
+![AthleteIQ Dashboard](screenshots/dashboard_overview.png)
+
+## How to Run This Project
+
+1. Create and activate a Python environment:
+
+python3.12 -m venv .venv
+source .venv/bin/activate
+
+2. Install required packages:
+
+pip install -r requirements.txt
+
+3. Download the PAMAP2 dataset from the UCI Machine Learning Repository.
+
+Place the unzipped folder here:
+
+data/raw/PAMAP2_Dataset/
+
+4. Process the data:
+
+python src/clean_data.py
+python src/make_features.py
+
+5. Train the model:
+
+python src/train_model.py
+
+6. Start Ollama and install the local model:
+
+ollama pull qwen3:4b
+
+7. Run the dashboard:
+
+streamlit run app/dashboard.py
+
+Then open:
+
+http://localhost:8501
 
 ## Local AI Component
 
@@ -86,9 +117,3 @@ Possible next steps include:
 - Add PDF report export
 - Add wellness or recovery inputs
 - Build a cleaner admissions demo version
-
-
-## Screenshot
-
-![AthleteIQ Dashboard](screenshots/dashboard_overview.png)
-
