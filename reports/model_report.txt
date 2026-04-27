@@ -1,4 +1,4 @@
-AthleteIQ Model Report
+Renegade Rehab AI Lab Model Report
 ======================
 
 Accuracy: 93.53%

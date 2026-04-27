@@ -87,7 +87,7 @@ def main():
     joblib.dump(feature_columns, MODEL_FOLDER / "feature_columns.joblib")
 
     with open(REPORT_FOLDER / "model_report.txt", "w") as file:
-        file.write("AthleteIQ Model Report\n")
+        file.write("Renegade Rehab AI Lab Model Report\n")
         file.write("======================\n\n")
         file.write(f"Accuracy: {accuracy:.2%}\n\n")
         file.write(report)

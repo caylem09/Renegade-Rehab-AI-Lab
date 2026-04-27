@@ -1,14 +1,14 @@
-# AthleteIQ Demo Video Script
+# Renegade Rehab AI Lab Demo Video Script
 
 ## Opening
 
-Hi, my name is Caylem, and this is AthleteIQ, a local AI sport performance proof of concept I built on my Mac mini.
+Hi, my name is Caylem, and this is Renegade Rehab AI Lab, a local AI sport performance prototype I built on my Mac mini.
 
 I created this project to demonstrate my interest in artificial intelligence, sport science, movement science, and human performance.
 
 ## Project Goal
 
-The goal of AthleteIQ is to show how wearable movement data and heart-rate data can be transformed into useful sport science insights.
+The goal of Renegade Rehab AI Lab is to show how wearable movement data and heart-rate data can be transformed into useful sport science insights.
 
 This project uses machine learning to classify physical activity and then uses a local AI model to generate a plain-English summary that could be useful for coaches, researchers, or performance professionals.
 
@@ -48,6 +48,6 @@ The goal is to demonstrate an applied AI workflow for sport and movement science
 
 ## Closing
 
-Building AthleteIQ helped me practice data cleaning, feature engineering, machine learning, model evaluation, dashboard development, local AI integration, and applied communication.
+Building Renegade Rehab AI Lab helped me practice data cleaning, feature engineering, machine learning, model evaluation, dashboard development, local AI integration, and applied communication.
 
 This project reflects the kind of work I hope to continue in graduate study: using AI and data analysis to support human performance, movement assessment, and evidence-based sport science.

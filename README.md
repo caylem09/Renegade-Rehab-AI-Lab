@@ -1,6 +1,6 @@
-# AthleteIQ
+# Renegade Rehab AI Lab
 
-AthleteIQ is a local AI sport performance proof of concept built to demonstrate how wearable movement data, heart-rate data, machine learning, and local language models can support sport science and human performance analysis.
+Renegade Rehab AI Lab is a local AI sport performance prototype built to demonstrate how wearable movement data, heart-rate data, machine learning, and local language models can support sport science and human performance analysis.
 
 ## Project Purpose
 
@@ -8,9 +8,9 @@ This project was created as an applied AI demonstration for graduate study prepa
 
 The goal is to show how raw wearable sensor data can be transformed into useful information for coaches, researchers, and performance professionals.
 
-## What AthleteIQ Does
+## What Renegade Rehab AI Lab Does
 
-AthleteIQ:
+Renegade Rehab AI Lab:
 
 - Loads wearable sensor and heart-rate data
 - Cleans and organizes the dataset
@@ -40,7 +40,7 @@ data/raw/PAMAP2_Dataset/Protocol/subject101.dat
 
 ## Screenshot
 
-![AthleteIQ Dashboard](screenshots/dashboard_overview.png)
+![Renegade Rehab AI Lab Dashboard](screenshots/dashboard_overview.png)
 
 ## How to Run This Project
 
@@ -82,13 +82,13 @@ http://localhost:8501
 
 ## Local AI Component
 
-AthleteIQ uses Ollama to run a local language model on a Mac mini. The dashboard sends a structured summary of activity and heart-rate results to the local model, which generates a coach-facing interpretation.
+Renegade Rehab AI Lab uses Ollama to run a local language model on a Mac mini. The dashboard sends a structured summary of activity and heart-rate results to the local model, which generates a coach-facing interpretation.
 
 This demonstrates a privacy-conscious workflow where data analysis and AI summarization can happen locally without relying on a subscription-based cloud AI model.
 
 ## Important Limitations
 
-AthleteIQ is a proof of concept.
+Renegade Rehab AI Lab is a proof of concept.
 
 It is not a medical device. It does not diagnose injury, prescribe training, or replace professional judgment. The AI summary is intended to support interpretation, not make clinical or medical decisions.
 
@@ -117,3 +117,9 @@ Possible next steps include:
 - Add PDF report export
 - Add wellness or recovery inputs
 - Build a cleaner admissions demo version
+
+## Brand Context
+
+Renegade Rehab AI Lab was developed under Renegade Rehab and Fitness as an applied AI prototype for sport performance, movement analysis, and human performance assessment.
+
+The project is intended as a proof of concept, not a finished commercial product.

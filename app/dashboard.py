@@ -16,13 +16,13 @@ FEATURES_FILE = Path("models/feature_columns.joblib")
 REPORT_FILE = Path("reports/model_report.txt")
 
 st.set_page_config(
-    page_title="AthleteIQ",
+    page_title="Renegade Rehab AI Lab",
     page_icon="🏃",
     layout="wide"
 )
 
-st.title("AthleteIQ")
-st.subheader("Local AI Sport Performance Proof of Concept")
+st.title("Renegade Rehab AI Lab")
+st.subheader("Local AI Dashboard for Wearable Sport Performance Analysis")
 
 st.write(
     "This dashboard uses wearable movement and heart-rate data to classify physical activity "

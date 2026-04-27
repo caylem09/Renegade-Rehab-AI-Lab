@@ -1,8 +1,8 @@
-# AthleteIQ: Local AI for Sport Performance Monitoring
+# Renegade Rehab AI Lab: Local AI for Sport Performance Monitoring
 
 ## Project Overview
 
-AthleteIQ is a local AI sport performance proof of concept designed to demonstrate how wearable movement data, heart-rate data, machine learning, and local language models can support sport science and human performance analysis.
+Renegade Rehab AI Lab is a local AI sport performance prototype designed to demonstrate how wearable movement data, heart-rate data, machine learning, and local language models can support sport science and human performance analysis.
 
 The project was built on a Mac mini using Python, scikit-learn, Streamlit, Ollama, and a local language model. The goal was to create a practical applied AI system that connects data science with sport and movement science.
 
@@ -10,11 +10,11 @@ The project was built on a Mac mini using Python, scikit-learn, Streamlit, Ollam
 
 Sport science professionals often work with large amounts of wearable sensor data, heart-rate data, and movement information. Raw data alone is difficult to interpret quickly. Coaches, researchers, and performance professionals need tools that can transform movement data into clear summaries that support decision-making.
 
-AthleteIQ explores how machine learning and local AI can help turn raw wearable data into useful performance information.
+Renegade Rehab AI Lab explores how machine learning and local AI can help turn raw wearable data into useful performance information.
 
 ## Dataset
 
-AthleteIQ uses the PAMAP2 Physical Activity Monitoring dataset, which includes wearable sensor and heart-rate data from subjects performing multiple physical activities.
+Renegade Rehab AI Lab uses the PAMAP2 Physical Activity Monitoring dataset, which includes wearable sensor and heart-rate data from subjects performing multiple physical activities.
 
 The dataset includes activities such as walking, running, cycling, sitting, standing, stair climbing, lying, and other movement tasks.
 
@@ -35,7 +35,7 @@ The machine-learning model uses engineered features from accelerometer, gyroscop
 
 ## Dashboard
 
-The AthleteIQ dashboard allows the user to select a subject and view:
+The Renegade Rehab AI Lab dashboard allows the user to select a subject and view:
 
 - Number of activity windows analyzed
 - Number of activities detected
@@ -49,7 +49,7 @@ The AthleteIQ dashboard allows the user to select a subject and view:
 
 ## Local AI Component
 
-AthleteIQ uses Ollama to run a local language model on the Mac mini. The dashboard sends a structured summary of the selected subject’s activity and heart-rate data to the local model.
+Renegade Rehab AI Lab uses Ollama to run a local language model on the Mac mini. The dashboard sends a structured summary of the selected subject’s activity and heart-rate data to the local model.
 
 The local model then generates a plain-English sport science summary. This demonstrates how AI can help translate technical model outputs into coach-facing interpretation while keeping the workflow local and privacy-conscious.
 
@@ -63,7 +63,7 @@ This shows that a relatively small local system can support meaningful sport sci
 
 ## Limitations
 
-AthleteIQ is a proof of concept and is not a medical device.
+Renegade Rehab AI Lab is a proof of concept and is not a medical device.
 
 It does not diagnose injury, prescribe training, or replace professional judgment. The AI-generated summary is intended to support interpretation, not make clinical or medical decisions.
 
@@ -71,7 +71,7 @@ The current version uses a public dataset and a basic machine-learning model. Fu
 
 ## Relevance to Graduate Study
 
-AthleteIQ connects directly to my interest in artificial intelligence, sport science, movement science, and human performance.
+Renegade Rehab AI Lab connects directly to my interest in artificial intelligence, sport science, movement science, and human performance.
 
 The project helped me practice data cleaning, feature engineering, machine learning, model evaluation, dashboard development, local AI integration, and applied communication.
 

@@ -1,9 +1,9 @@
 import requests
 
 prompt = """
-Explain AthleteIQ in one short paragraph.
+Explain Renegade Rehab AI Lab in one short paragraph.
 
-AthleteIQ is a proof of concept that uses wearable movement data,
+Renegade Rehab AI Lab is a proof of concept that uses wearable movement data,
 heart-rate data, machine learning, and a dashboard to support sport
 science and human performance analysis.
 """
